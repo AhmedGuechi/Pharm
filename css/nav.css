@@ -1,0 +1,388 @@
+
+nav {
+  position: relative;
+  background: #eeefe8;
+  font-weight: 400;
+  display: flex;
+  padding: 0;
+  margin-top: 0%;
+  padding: 0%;
+  width: 100%;
+  /* box-shadow: ; */
+}
+
+a{
+  text-decoration: none;
+}
+
+nav a{
+  text-decoration: none;
+}
+.nav{
+  width: 87.5%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.upper-nav{
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 2vw;
+  font-size: 1em;
+}
+.upper-nav a:visited{
+  color: #fff;
+}
+.login{
+  background-color: var(--color-primary);
+  padding: 1.5vh 3vw;
+  border-bottom-left-radius:10% ;
+  border-bottom-right-radius:10% ;
+  margin-right: 2vw;
+  color: #fff;
+}
+.login a{
+  text-decoration: none;
+}
+.search{
+  background-color: var(--color-primary);
+  padding: 1% 2%;
+  border-bottom-left-radius:2% ;
+  border-bottom-right-radius:2% ;
+  color: #fff;
+  /* max-width: 20vw; */
+  /* min-width: 30%; */
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+
+}
+.login:hover,.search:hover{
+  background-color: #5889d3;
+  cursor: pointer;
+}
+.lower-nav{
+  display: flex;
+  width: 100%;
+  /* justify-content: space-evenly; */
+}
+
+.icon-container{
+  width: 12.5%;
+  margin: 0%;
+}
+.logo{
+  /* width: 100%; */
+  /* height: 100%; */
+  
+  margin:2vh 1vw;
+}
+
+nav .item,.logo{
+  font-size: 01rem;
+  display: inline-block;
+  position: relative;
+  padding: 0 0px;
+  cursor: pointer;
+  z-index: 5;
+  min-width: 20%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  justify-content: right;
+
+}
+
+@media screen and (max-width:1260px){
+  nav .item,.underline{
+    display: none;
+  }
+}
+
+.dropdown {
+  overflow: hidden;
+  list-style: none;
+  position: absolute;
+  padding: 0;
+  width: 100%;
+  left: 0;
+  display: none;
+}
+
+.item:hover > .dropdown{
+  
+  transition: 2s;
+  position: relative;
+  display: block;
+  
+}
+.dropdown a{
+  color: white;
+  display: block;
+  padding: 0;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: var(--color-primary);
+}
+
+.dropdown a:link{
+  color: white;
+}
+.dropdown a:visited{
+  color: white;
+}
+
+.dropdown a:hover {
+  background: #254fb5;
+}
+
+.underline {
+  height: 6px;
+  background: var(--color-primary);
+  position: absolute;
+  bottom: 0;
+  width: 17.5%;
+  z-index: 2;
+  pointer-events: none;
+  transition: 0.35s;
+  margin-left: 0;
+}
+
+nav .item:hover > .dropdown > div {
+  transform: translate(0);
+}
+
+.underline {
+  transform: translate(4%, 0);
+}
+nav .item:nth-child(3):hover ~ .underline {
+
+  transform: translate(100%, 0);
+}
+nav .item:nth-child(4):hover ~ .underline {
+  transform: translate(200%, 0);
+}
+nav .item:nth-child(5):hover ~ .underline {
+  transform: translate(300%, 0);
+}
+nav .item:nth-child(6):hover ~ .underline {
+  transform: translate(400%, 0);
+}
+nav .item:nth-child(7):hover ~ .underline {
+  transform: translate(500%, 0);
+}
+.menu{
+  display: none;
+  width: 48.8vw;
+  justify-content: center;
+}
+.bar1, .bar2, .bar3 {
+  width: 32px;
+  height: 4px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.change .bar1{
+  transform: translate(0, 10px) rotate(-45deg);
+}
+
+.change .bar2{opacity: 0;}
+.menu-icon{
+  cursor: pointer;
+}
+
+.change .bar3{
+  transform: translate(0, -10px) rotate(45deg);
+}
+.bottom-nav{
+  display: none;
+  background-color: #eeefe8;
+  position: fixed;
+  width: 100%;
+  bottom: 0%;
+  padding: 1vw 1vh;
+  z-index: 999;
+  border-top: solid rgb(210, 210, 210) 1px;
+}
+.vertical-line{
+  display: none;
+  background-color: #254fb5;
+  width: 0.2vw;
+  height: 5vh;
+}
+.home{
+  width: 48.8vw;
+  display: none;
+}
+@media screen and (max-width:1260px) {
+  .bottom-nav{
+    display:flex;
+  }
+  .menu{
+    display: flex;
+    align-items: center;
+  }
+  .vertical-line{
+    display: block;
+  }
+  .home{
+    display: flex;
+    justify-content: center;
+  }
+  .icon-container{
+    margin: 0 8vw;
+  }
+}
+.material-icons{
+  transform: translate(0,4px);
+}
+nav .upper-nav a:link{
+    color: #fff;
+}
+nav .upper-nav a:visited{
+    color: #fff;
+}
+nav a:link{
+    color: #000000;
+}
+nav a:visited{
+    color: #000000;
+}
+
+
+
+.sideMenu1.sideMenu{
+  transform: translateX(0);
+}
+.sideMenu1{
+  transform: translateX(-100%);
+  transition: 1s;
+  display: block;
+  width: 50vw;
+  height: 100vh;
+  position: fixed;
+  float: left;
+  background-color: #eeefe8;
+  z-index: 999;
+  padding: 5%; 
+  top: 0;
+  padding-top: 2%;
+}
+#leftMenu div div{
+  padding-left: 10%;
+}
+.arrow{
+  --color-arrow:#512c2c;
+  border: solid var(--color-arrow);
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  display: inline-block;
+  padding: 4px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.arrow.up{
+  transform: rotate(-135deg);
+  transition: 0.5s;
+}
+.appear{
+  display: none;
+}
+.appear.app{
+  transform: translateX(0);
+  transform: 1s;
+
+}
+#leftMenu div div a{
+  font-size: large;
+  font-weight: 400;
+}
+#leftMenu div{
+  width: 80%;
+  padding: 2%;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+@media screen and (min-width:1260px){
+  #leftMenu{
+    display: none;
+  }
+}
+.search_bar{
+  /* width: 80%; */
+  /* height: 7%; */
+  position: fixed;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.search_bar input{
+  background-color: #d7d9c8;
+  width: 80%;
+  height: 7%;
+  margin-top: 2%;
+  display: block;
+  outline: none;
+  border: 2px solid var(--color-primary-text);
+  border-radius: 3rem;
+  padding: 0.5vh 1vw;
+  border-style: none;
+  font-size: 1rem;
+}
+
+.search_bar1{
+  display: none;
+}
+
+#close_search{
+  margin-top: 2%;
+  border: none;
+  display: block;
+  outline: none;
+  border: 2px solid var(--color-primary-text);
+  border-radius: 3rem;
+  padding: 0.5vh 1vw;
+  border-style: none;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.search input::placeholder{
+  color: rgb(203, 203, 203);
+}
+#search-btn{
+  background-color: inherit;
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 8%;
+}
+#search-input{
+  background-color: inherit;
+  border: none;
+  outline: none;
+  height: 80%;
+  font-size: 1.2rem;
+  color: #fff7f7;
+  width: 20vw;
+  max-width: 80%;
+  margin: 0.1rem;
+  display: inline;
+}
+@media screen and(max-width:1px){
+  
+}
+
+.complete{
+  width: 4%;
+}

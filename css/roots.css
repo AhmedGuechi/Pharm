@@ -1,0 +1,10 @@
+@font-face {
+    font-family: Jost;
+    src: url(../fonts.gstatic.com/s/jost/v15/92zatBhPNqw73oTd4g.woff2);
+}
+
+:root {
+    --color-primary: rgba(16, 49, 120, 1);
+    --color-secondary: rgba(255, 153, 35, 1);
+    --color-third: rgba(91, 108, 143, 1);
+}

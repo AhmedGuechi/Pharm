@@ -1,0 +1,97 @@
+@font-face {
+    font-family: jost;
+    src: url(../fonts.gstatic.com/s/jost/v15/92zatBhPNqw73oTd4g.woff2);
+}
+*{
+    font-family: jost;
+
+}
+section{
+    width: 80vw;
+    /* border: 1px var(--color-primary) solid; */
+    margin: 5vh auto;
+    padding: 1% 5%;
+    border-radius: 7%;
+}
+input[type="submit"]{
+    /* width: 20%;
+    height: 5vh;
+    margin: 4vh 2vw;
+    padding: 0; */
+    width: 15rem !important;
+    font-size: large !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+    padding: 0 !important;
+    color: #ffff !important;
+    background: rgba(255, 153, 35, 1) !important;
+    cursor: pointer !important;
+    
+}
+#regisform input{
+    display: block;
+    width: 100%;
+    margin-bottom: 1.5vh;
+    border-style: none;
+    background-color: rgb(232, 238, 251);
+    border-radius: 3rem;
+    height: 5vh;
+    padding: 2.5vh;
+    outline: none;
+}
+#regisform label{
+    padding-left: 0.8vw;
+    font-size: medium;
+    color: rgba(91, 108, 143, 1);
+
+}
+#regisform div{
+    width: 15rem;
+    font-size: large;
+    font-weight: 600;
+    text-align: center;
+    padding: 0;
+    color: #ffff;
+    background: rgba(255, 153, 35, 1);
+    cursor: pointer;
+    display: block;
+    margin-bottom: 1.5vh;
+    border-style: none;
+    border-radius: 3rem;
+    height: 5vh;
+    outline: none;
+}
+input[type="submit"]:hover{
+    /* border:1px solid var(--color-hover);
+    background-color: #fff;
+    transition: .3s;
+    color: var(--color-hover); */
+    background: #ffff;
+    color: rgb(255, 153, 35, 1);
+    transition: .5s;
+    border: solid 1px rgb(255, 153, 35, 1);
+}
+#regisform div:hover{
+    background: #ffff;
+    color: rgb(255, 153, 35, 1);
+    transition: .5s;
+    border: solid 1px rgb(255, 153, 35, 1);
+}
+h1, #regisform h3{
+    color: rgba(16, 49, 120, 1);
+}
+
+.valid{
+    background-color: rgba(0,255,0,0.2) !important;
+    border: solid 1.3px green !important;
+}
+.unvalid{
+    background-color: rgba(255,0,0,0.2) !important;
+    border: solid 1.3px red !important;
+}
+small{
+    color: red;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 10px;
+}

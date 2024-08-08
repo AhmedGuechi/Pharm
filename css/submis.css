@@ -1,0 +1,31 @@
+h3{
+    text-align: center;
+}
+
+#submis{
+    margin: 5vh 5vw;
+}
+
+#submis input{
+    display: block;
+    margin: 3% 2%;
+    width: 90%;
+}
+
+#submis label{
+    font-size: 1.5rem ;
+    font-weight: 600;
+}
+
+#submis input[type="file"]{
+    width: min-content;
+    margin: 3vh 2vw;
+}
+
+.unvalid{
+    color: red;
+    margin-left: 2vw;
+    font-size: small;
+    display: block;
+}
+

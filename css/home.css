@@ -1,0 +1,7 @@
+@keyframes anime{
+    from{
+        display: none;
+    }to{
+        display: block;
+    }
+}

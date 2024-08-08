@@ -1,0 +1,66 @@
+@font-face {
+  font-family: jost;
+  src: url(../fonts.gstatic.com/s/jost/v15/92zatBhPNqw73oTd4g.woff2);
+}
+* {
+    box-sizing: border-box;
+    font-family: jost;
+  }
+  
+  :root {
+    --color-primary: #224a99;
+    --color-hover: rgba(255, 153, 35, 1);
+    --color-text: rgba(91, 108, 143, 1);
+    
+  }
+  nav img{
+    width: 70px;
+    height: auto;
+  }
+  body {
+    place-items: center;
+    margin: 0;
+    padding: 0;
+    /* background-image: url("background.svg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: white;
+    font-family: "Euclid Circular A";
+    color: #000;
+    animation: rotate 6s infinite alternate linear;
+    min-height: 100vh;
+
+  }  
+  .fa-facebook {
+    margin: 0rem 0rem;
+    text-decoration: none;
+    color: rgba(91, 108, 143, 1);
+    padding: 0.5rem;
+    border-radius: 10%;
+
+}
+
+.fa-facebook:hover {
+    background: rgb(59, 89, 152);
+    color: #ffff;
+}
+
+.fa-linkedin {
+    margin: 0rem 0rem;
+    text-decoration: none;
+    color: rgba(91, 108, 143, 1);
+    padding: 0.5rem;
+    border-radius: 10%;
+
+}
+
+.fa-linkedin:hover {
+    background: rgb(0, 119, 181);
+    color: #ffff;
+
+}
+
+
+input:-internal-autofill-selected{
+  background-color: initial;
+}

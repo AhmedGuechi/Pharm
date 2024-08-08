@@ -1,0 +1,63 @@
+@font-face {
+    font-family: Jost;
+    src: url(../fonts.gstatic.com/s/jost/v15/92zatBhPNqw73oTd4g.woff2);
+}
+
+.main {
+    font-family: Jost;
+    margin: 3rem;
+}
+
+.main h2 {
+    color: rgba(16, 49, 120, 1);
+    font-weight: 600;
+    text-align: center;
+}
+
+.main p {
+    color: rgba(91, 108, 143, 1);
+    font-size: 1.1rem;
+    font-weight: 350;
+    line-height: 2.5rem;
+}
+
+.links {
+    text-decoration: none;
+    color: rgba(16, 49, 120, 1);
+}
+
+.links:hover {
+    color: var(--color-secondary);
+    text-decoration: underline;
+}
+.to-top {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: rgb(44, 46, 131);
+    color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    bottom: 2%;
+    right: 2%;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    transition: all 0.4s ease;
+    pointer-events: none;
+}
+
+.to-top.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+.to-top.active:hover {
+    background-color: rgba(255, 153, 35, 1);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.6);
+}
+html{
+    scroll-behavior: smooth;
+}

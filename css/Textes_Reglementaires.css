@@ -1,0 +1,135 @@
+
+*{
+    
+    box-sizing: content-box;
+    padding: 0px;
+}
+.line {
+    display: flex;
+    flex-direction: row;
+    
+    padding-top: 50px;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    background-color: rgb(254, 254, 239);
+    border-bottom: solid black 0.5px;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 300;
+}
+
+ h1{
+    margin-bottom: 40px; 
+    margin-left: 90px;
+    margin-top:80px ;
+    
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 600;
+    color:rgba(16,49,120,1) ;
+}
+a{
+    text-decoration: none;
+}
+.content{
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+.download{
+    font-size: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding: 6px 50px;
+    background-color: rgba(16,49,120,1);
+    color:white;
+    border-radius: 5px;
+    margin-left: 80px;
+    transition: 0.4s;
+    cursor: pointer;
+
+}
+.download:hover{
+    background-color: rgba(255, 153, 35, 1);
+    
+}
+.txt {
+    margin-left: 3vw ;
+    
+    color: rgba(91, 108, 143, 1);
+    font-size: 1.1rem;
+    font-weight: 350;
+    transition: 0.3s;
+
+}
+
+.txt:hover{
+    color: rgba(255, 153, 35, 1);
+}
+.swape1{
+    display: block;
+}
+.swape2{
+    display: none;
+}
+.swape3{
+    display: none;
+}
+.swaping{
+    text-align: center;
+    width: 50 px;
+}
+.swape_btn{
+    width: 40px;
+    background-color: rgba(16,49,120,1);
+    color: white;
+    border: 0.5 rgba(16,49,120,1) ;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    transition: 0.1s;
+
+    
+}
+
+.swape_btn:hover{
+    width: 45px;
+    height: 30px;
+    background-color: rgb(255, 94, 0);
+    border-color: rgb(255, 94, 0);
+}
+
+@media(max-width:1200px){
+    .line{
+        flex-direction: column;
+    }
+    .txt{
+        margin-bottom: 20px;
+    }
+    .line{
+        border-bottom: solid black 0.5px;
+    }
+}
+@media(max-width:600px){
+    .title h1{
+        margin-left: 40px;
+    }
+}
+.pr{
+    padding: 0;
+}
+.fa-home{
+    text-align: center;
+}
+#hh{
+    font-size: 35px;
+    text-align: center;
+    
+    
+}
+.act{
+    width: 45px;
+    height: 30px;
+    background-color: rgb(255, 94, 0);
+    border-color: rgb(255, 94, 0);
+}

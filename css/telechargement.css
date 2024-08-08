@@ -1,0 +1,103 @@
+@font-face {
+    font-family: Jost;
+    src: url(../../fonts.gstatic.com/s/jost/v15/92zatBhPNqw73oTd4g.woff2);
+}
+*{
+    font-family: Jost;
+       
+    
+}
+.subtitle{
+    display : flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    max-width: 90vw;
+    margin: auto;
+
+
+}
+
+.subtitle h3{
+    font-size: 20px;
+    padding: 20px 40px;
+    color: rgba(16,49,120,1);
+}
+.butt{
+    padding-top: 15px;
+}
+
+.li{
+    
+    
+    padding: 17px;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    border-top:solid black 0.5px ;
+    max-width: 90vw;
+    margin: auto;
+}
+body{
+    padding: 10vw;
+}
+
+.title {
+    font-size: 35px;
+    margin: 10px 0px 50px 60px;
+    padding: 0px;
+    color: rgb(11, 11, 113);
+}
+.li a{
+    color: white;
+    background-color: rgb(11, 11, 113);
+    padding: 6px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.li a:hover{
+    background-color: rgb(236, 121, 64);
+    border: rgb(236, 121, 64)
+}
+.li p{
+    font-size: 14px;
+}
+.tout_telecharger{
+    background-color: orange;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    
+}
+
+
+
+@media (max-width: 519px){
+    body{
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    .subtitle h3{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .title{
+        text-align: center;
+        
+    }
+    .li a{
+        padding: 1vw 5vw;
+    }
+    .li{
+        width: 100%;
+    }
+
+
+}
+
+
+

@@ -1,0 +1,294 @@
+.main{
+    font-family: Jost;
+    margin: 3rem;
+}
+
+@font-face {
+    font-family: Jost;
+    src: url(../../fonts.gstatic.com/s/jost/v15/92zatBhPNqw73oTd4g.woff2);
+}
+*{
+    
+    box-sizing: content-box;
+    font-family: Jost;
+    
+}
+.doccument {
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-around;
+    text-align: center;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 300;
+    color:rgba(16,49,120,1) ;
+    margin:10px;
+    
+    
+    
+    
+
+}
+.ti a{
+    color:rgba(16,49,120,1);
+    font-size: 30px;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 500;
+    transition: 0.3s;
+
+}
+
+.txt a{
+    
+    
+    font-weight: 300;
+    
+}
+.sous{
+    text-align: center;
+}
+.sous h3{
+    font-size: 28px;
+    color: rgba(16,49,120,1);
+}
+.pdf , .docx{
+    display: flex;
+    justify-content: center;
+
+}
+a{
+    text-decoration: none;
+}
+.a{
+    display: flex;
+}
+.telecharger a{
+    color: white;
+    background-color:rgba(16,49,120,1) ;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    height: 40px;
+    transition: 0.4s;
+    font-family: Jost;
+    font-style: normal;
+    
+    
+}
+h1{
+    margin-bottom: 40px; 
+    margin-left: 90px;
+    margin-top:80px ;
+    
+    font-size: 40px;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 600;
+    color:rgba(16,49,120,1) ;
+}
+
+.telecharger a:hover{
+    background-color: rgb(255, 108, 55);
+}
+
+.fa-download{
+    font-size: 30px;
+    margin:10px;
+
+
+}
+
+
+.t{
+    padding: 0px;
+    margin: 0px;
+
+}
+.icon{
+    font-size: 120px;
+    
+}
+.fa-file-pdf{
+    color: red;
+    margin:10px;
+
+}
+.fa-file-word{
+    color: blue;
+    margin:10px;
+
+}
+.ti{
+    font-size: 25px;
+}
+
+.paragraph{
+   
+    color: rgba(91, 108, 143, 1);
+    font-size: 1.1rem;
+    font-weight: 350;
+    line-height: 2.5rem;
+    
+}
+.L{
+    
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+
+}
+.paragraph h3{
+    
+    font-size: 30px;
+    color:rgba(16,49,120,1) ;
+
+}
+ol li{
+    color: rgba(16,49,120,1);
+}
+.paragraph h4{
+    color: rgba(16,49,120,1);
+}
+.paragraph a{
+    color: rgba(16,49,120,1);
+    font-size: 1.1rem;
+    font-weight: 350;
+    line-height: 2.5rem;
+    transition: 0.3s;
+}
+.paragraph a:hover{
+    color:orange;
+}
+.wor{
+    padding-left: 19px;
+}
+.adjust{
+    padding-left: 35px;
+}
+
+@media (max-width:1000px) {
+    .doccument{
+        
+        
+        flex-direction: column;
+        
+    }a
+    .pdf , .docx{
+        justify-content: center;
+    }
+    
+    
+    .sous h3{
+        font-size: 28PX;
+    }
+    .titre h1{
+         
+        margin-left: 3vw;   
+        
+       }
+
+    
+}
+
+.up{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    background-color: orange ;
+    cursor: pointer;
+    display: none;
+    
+}
+
+@media (max-width:400px){
+   .icon i{
+    font-size: 20vw;
+   } 
+   .ti a{
+    font-size: 7vw;
+   }
+   .t{
+    font-size: 4vw;
+   }
+   .telecharger a{
+    font-size: 4vw;
+    width: 45vw;
+   }
+   .fa-download{
+    font-size: 5vw;
+    margin:10px;
+
+   }
+   
+   .titre h1{
+    font-size: 9vw; 
+    margin-left: 3vw;   
+    
+   }
+   .sous h3{
+    font-size:8vw
+   }
+}
+.paragraph{
+    margin:10px;
+
+}
+.q a{
+    margin:10px;
+
+}
+.paragraph{
+    padding-bottom: 50px;
+}
+.w3-xlarge i{
+    color: black;
+    font-size: 35px;
+    margin-top: 5px;
+    
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+.to-top {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: rgb(44, 46, 131);
+    color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    bottom: 2%;
+    right: 2%;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    transition: all 0.4s ease;
+    pointer-events: none;
+}
+
+.to-top.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+.to-top.active:hover {
+    background-color: rgba(255, 153, 35, 1);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.6);
+}
+
+
+
+/* .Cadre-réglementaire{
+    color: rgba(91, 108, 143, 1);
+    font-size: 1.1rem;
+    font-weight: 350;
+    line-height: 2.5rem;
+} */
+
+

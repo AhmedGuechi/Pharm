@@ -1,0 +1,242 @@
+.main_top h2 {
+    text-align: left;
+    font-size: clamp(2.125rem, 4vw, 3.125rem);
+    line-height: 60px;
+    color: rgba(16, 49, 120, 1);
+    font-weight: 600;
+
+}
+
+.main_top {
+    font-family: Jost;
+    display: flex;
+}
+
+.main_top p {
+    color: rgba(91, 108, 143, 1);
+
+
+}
+
+.contact_info h3 {
+    color: rgba(16, 49, 120, 1);
+    padding: 3rem;
+    font-size: clamp(1.125rem, 1.5rem, 2rem);
+    margin: 1rem;
+    margin-left: 0;
+    padding: 0;
+    height: 1rem;
+    font-weight: 600;
+    
+
+}
+.contact_info a:first-of-type {
+    text-decoration: none;
+}
+.contact_info h3:hover {
+    color: var(--color-secondary);
+    text-decoration: underline;
+}
+
+.contact_info p {
+
+    color: rgba(91, 108, 143, 1);
+    margin: 1rem 0rem;
+    padding: 1rem 0rem;
+}
+
+.left_part {
+    width: 30%;
+
+}
+
+
+.contact_info {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    width: 50%;
+
+}
+
+hr {
+    margin-top: 2rem;
+
+}
+
+.email {
+    padding: 0.5rem 1rem;
+    border: 0.025rem solid rgba(240, 242, 245, 1);
+    border-radius: 2rem;
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: 450;
+    margin: 1rem 0rem
+}
+
+.email:hover {
+    background: var(--color-secondary);
+    transition: .5s;
+    color: #ffff;
+
+}
+
+.fa-facebook {
+    margin: 0rem 0rem;
+    text-decoration: none;
+    color: rgba(91, 108, 143, 1);
+    padding: 0.5rem;
+    border-radius: 10%;
+
+}
+
+.fa-facebook:hover {
+    background: rgb(59, 89, 152);
+    color: #ffff;
+}
+
+.fa-linkedin {
+    margin: 0rem 0rem;
+    text-decoration: none;
+    color: rgba(91, 108, 143, 1);
+    padding: 0.5rem;
+    border-radius: 10%;
+
+}
+
+.fa-linkedin:hover {
+    background: rgb(0, 119, 181);
+    color: #ffff;
+
+}
+
+#main_form input {
+    display: block;
+    margin-bottom: 1.5rem;
+    width: 80%;
+    border-radius: 3rem;
+    height: 3rem;
+    background-color: rgb(232, 238, 251);
+    border-style: none;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+#main_form h2 {
+    font-family: Jost;
+    text-align: left;
+    font-size: clamp(1.5rem, 4vw, 2.125rem);
+    line-height: 60px;
+    color: rgba(16, 49, 120, 1);
+    margin-top: 2rem;
+    font-weight: 600;
+
+}
+
+#main_form {
+    color: rgb(59, 89, 152);
+    font-family: Jost;
+
+
+
+}
+
+.main {
+    margin-left: 6rem;
+    margin-top: 2rem;
+}
+
+#main_form form textarea {
+    resize: none;
+    display: block;
+    width: 80%;
+    border-radius: 1.5rem;
+
+    background-color: rgb(232, 238, 251);
+    border-style: none;
+    padding-left: 1.25rem;
+    padding-top: 0.5rem;
+    margin-bottom: 2rem;
+
+}
+
+#main_form form input:last-of-type {
+    width: 15rem;
+    font-size: large;
+    font-weight: 600;
+    text-align: center;
+    padding: 0;
+    color: #ffff;
+    background: var(--color-secondary);
+    cursor: pointer;
+}
+
+#main_form form input:last-of-type:hover {
+    background: #ffff;
+    color: var(--color-secondary);
+    transition: .5s;
+    border: solid 1px var(--color-secondary);
+}
+
+#main_form form input,
+textarea,
+select {
+    outline: none;
+}
+
+#main_form form input,
+textarea {
+    outline: none;
+    font-size: medium;
+    overflow-y: hidden;
+}
+
+@media screen and (max-width: 990px) {
+    .main {
+        margin: 1rem 1rem;
+    }
+
+    .main_top {
+
+        flex-direction: column;
+        /* margin: 1rem 1rem; */
+    }
+
+    .left_part {
+        width: 100%;
+    }
+
+    .contact_info {
+        width: 100%;
+        margin-left: 0 !important;
+
+    }
+    .contact_info h3 
+    {
+        font-size: 1.2rem;
+    }
+    #main_form input {
+        width: 100%;
+    }
+    #main_form form textarea {
+        width: 100%;
+    }
+    #main_form form input:last-of-type{
+       display: block;
+        align-items: center;
+    }
+}
+#main_form form input.error,
+#main_form form textarea.error {
+  border: 1px solid red;
+  background-color: rgba(255, 0, 0, 0.1);
+
+}
+.hidden-text{
+    color: red;
+}
+#main_form form input.valid,
+#main_form form textarea.valid {
+  border: 1px solid green;
+  background-color: rgba(0, 255, 0, 0.1);
+}
